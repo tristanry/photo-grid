@@ -1,6 +1,6 @@
 # Photo Grid
 
-Specifically adapted to photogragh display, this responsive grid layout is
+This responsive grid theme provides a beautiful layout to showcase your photograghy and manage your gallery with ease.
 
 # Origin
 
