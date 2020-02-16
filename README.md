@@ -18,7 +18,7 @@ Photo Grid is based on [Hugird](http://themes.gohugo.io/theme/hugrid/).
 
 ## Screenshot
 
-![Hugrid screenshot](https://github.com/chen-zhe/photo-grid/master/images/screenshot.png)
+![Hugrid screenshot](https://github.com/Chen-Zhe/photo-grid/blob/master/images/screenshot.png)
 
 
 ## Contents
