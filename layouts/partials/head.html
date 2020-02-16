@@ -6,7 +6,7 @@
 		<meta name="keywords" content="{{ with .Site.Params.keywords }}{{ . }}{{ end }}" />
 		<meta name="author" content="{{ with .Site.Params.author }}{{ . }}{{ end }}" />
 		{{ with .Site.Params.favicon }}<link rel="icon" href="{{ . }}">{{ end }}
-		{{ .Hugo.Generator }}
+		{{ hugo.Generator }}
 		<style>
 		body {
 			background: {{ .Site.Params.bodybgcolor }};

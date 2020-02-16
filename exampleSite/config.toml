@@ -1,32 +1,23 @@
 # Site settings
 baseurl = "http://example.org/"
 languageCode = "en-us"
-title = "Hugrid - Grid Theme For Hugo"
-theme = "hugrid"
-# Enter your tracking code to enable Google Analytics
-googleAnalytics = "UA-XXXXXXXX-Y"
+title = "Photo Grid - Grid Gallery For Hugo"
+theme = "photo-grid"
 
-contentdir = "content"
-datadir = "data"
-layoutdir = "layouts"
-publishdir = "public"
+# Enter your tracking code to enable Google Analytics
+# googleAnalytics = "UA-XXXXXXXX-Y"x
 
 [params]
     # Meta
-    title = "Hugrid - a simple grid theme for Hugo"
-    subtitle = "A kind of boilerplate to perform anyone or anything quickly. Portfolio, collection, bookmarks, contacts and so on."
-    author = "Pavel Kanyshev"
-    description = "Hugrid - grid theme for Hugo with an expanding image preview."
-    keywords = "Hugo, Hugo theme, grid theme, portfolio, bookmarks, collection, contacts"
+    title = "Photo Grid - Grid Gallery"
+    subtitle = "A customized theme for showing your photography work with minimal effort and multiple customization options. Click on each image to find out more about this theme"
+    author = "Chen Zhe"
+    description = "Photo Grid - Grid Gallery For Hugo"
+    keywords = "Hugo, Hugo theme, grid theme, gallery"
 
-    # Body background color
-    bodybgcolor = "#f9f9f9"
-
-    # Preview container button text
-    buttontext = "Get the theme"
+    # Body background and  text color
+    bodybgcolor = "#3d3d3d"
+    bodytextcolor = "#f2f2f2"
 
     # Footer text
-    footertext = "Made by [Codrops](http://tympanus.net/codrops/2013/03/19/thumbnail-grid-with-expanding-preview/), [Hugo](http://gohugo.io) and [me](https://github.com/aerohub)"
-
-    # add extra-css
-    # custom_css = ['css/extra1.css', 'css/extra2.css']
+    footertext = "Made by [Codrops](http://tympanus.net/codrops/2013/03/19/thumbnail-grid-with-expanding-preview/), [Hugo](http://gohugo.io), [Pavel](https://themes.gohugo.io/hugrid/) and [me](https://chen-zhe.github.io)."

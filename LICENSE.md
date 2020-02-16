@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2016 [Pavel Kanyshev](https://github.com/aerohub)
+Copyright (c) 2020 [Chen Zhe](https://github.com/chen-zhe)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
