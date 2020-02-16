@@ -19,6 +19,7 @@
 	outline: none;
 	display: block;
 	position: relative;
+	width: 100%;
 }
 
 .og-grid li.og-expanded > a::after {
@@ -87,7 +88,6 @@
 
 .og-fullimg,
 .og-details {
-	width: 50%;
 	float: left;
 	height: 100%;
 	overflow: hidden;
@@ -95,10 +95,13 @@
 }
 
 .og-details {
+	width: 40%;
 	padding: 0 40px 0 20px;
+	color: #555;
 }
 
 .og-fullimg {
+	width: 60%;
 	text-align: center;
 }
 
@@ -110,16 +113,17 @@
 
 .og-details h3 {
 	font-weight: 300;
-	font-size: 52px;
-	padding: 40px 0 10px;
+	font-size: 40px;
+	padding: 30px 0 10px;
 	margin-bottom: 10px;
+	color: black;
 }
 
 .og-details p {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 22px;
-	color: #999;
+	padding-bottom: 1em;
 }
 
 .og-details a {
@@ -192,4 +196,35 @@
 	.og-fullimg { display: none; }
 	.og-details { float: none; width: 100%; }
 	
+}
+
+ul.exif {
+  list-style-type: square;
+  -webkit-column-width: 180px;
+  -moz-column-width: 180px;
+  column-width: 180px;
+  -webkit-column-count: 2; /* max count */
+  -moz-column-count: 2;
+  column-count: 2;
+	text-align: left;
+	padding: 10px;
+	margin: 0;
+	
+}
+
+ul.exif > li {
+	height: auto;
+	display: list-item;
+	margin: 0;
+}
+
+.stamp {
+	color: #555;
+	font-size: 1em;
+	font-weight: 700;
+	border: 0.5rem double #555;
+	display: inline-block;
+	padding: 0.25rem 1rem;
+	text-transform: uppercase;
+	border-radius: 1rem;
 }
