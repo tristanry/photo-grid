@@ -2,23 +2,26 @@
 
 This responsive grid theme provides a beautiful layout to showcase your photograghy and manage your gallery with ease.
 
+## Distinguishing Features
+
+- Easy photo management
+    - Configurable photo display order
+    - Automatic thumbnail creation
+    - Automatic EXIF info extraction
+- Full lazy loading for maximum bandwidth savings
+
 # Origin
 
-Photo Grid is based on [Hugird](http://themes.gohugo.io/theme/hugrid/). 
+Photo Grid is based on [Hugird](http://themes.gohugo.io/theme/hugrid/), a responsive grid-layout boilerplate theme for Hugo.
 
 ## Demo
 
 - [My own photo gallery](https://chen-zhe.github.io/portfolio/)
 
-## Features
-
-- Responsive design
-- Easy photo management with automatic sorting, thumbnail creation and EXIF info extraction
-- Full lazy loading for maximum bandwidth savings
 
 ## Screenshot
 
-![Hugrid screenshot](https://github.com/Chen-Zhe/photo-grid/blob/master/images/screenshot.png)
+![Hugrid screenshot](images/screenshot.png)
 
 
 ## Contents
