@@ -10,7 +10,7 @@ This responsive grid theme provides a beautiful layout to showcase your photogra
     - Automatic EXIF info extraction
 - Full lazy loading for maximum bandwidth savings
 
-# Origin
+## Origin
 
 Photo Grid is based on [Hugird](http://themes.gohugo.io/theme/hugrid/), a responsive grid-layout boilerplate theme for Hugo.
 
@@ -59,9 +59,9 @@ Take a look inside the [`exampleSite`](exampleSite) folder of this theme. You'll
 
 ### Photo Management
 
-All photos are stored in the [`photo`](exampleSite/content/photo) folder under `content`. You can make multiple directories under it and the theme will enumerate all photos within in order. Within each subfolder, e.g. [`1-trip1`](exampleSite/content/photo/1-trip1), you can put all relevant photos in it and then copy over the `index.md` file.
+All photos are stored in the [`photo`](exampleSite/content/photo) folder under the `content` folder. You can put multiple directories under it and the theme will enumerate all photos within in order of the directory listing. Within each subfolder, e.g. [`1-trip1`](exampleSite/content/photo/1-trip1), you can put all relevant photos in it and then copy over the `index.md` file.
 
-Within `index.md` file, you can specify each photo's name, description and other properties. Take a look at the descriptions to understand what can be customized.
+Within [`index.md`](exampleSite/content/photo/1-trip1/index.md) file, you can specify each photo's name, description and other properties. Take a look at the descriptions to understand what can be customized.
 
 ### Nearly finished
 
