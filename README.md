@@ -45,7 +45,7 @@ Inside the folder of your new Hugo site run:
     $ cd themes
     $ git clone https://github.com/chen-zhe/photo-grid
 ```
-For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
+For more information read the official [setup guide](https://gohugo.io/overview/installing/) of Hugo.
 
 
 ## Getting started
@@ -55,11 +55,11 @@ After installing the theme successfully it requires a just a few more steps to g
 
 ### The config file
 
-Take a look inside the [`exampleSite`](https://github.com/chen-zhe/photo-grid/tree/master/exampleSite) folder of this theme. You'll find a file called [`config.toml`](https://github.com/chen-zhe/photo-grid/blob/master/exampleSite/config.toml). To use it, copy the `config.toml` in the root folder of your Hugo site. Feel free to change the strings in this theme.
+Take a look inside the [`exampleSite`](exampleSite) folder of this theme. You'll find a file called [`config.toml`](exampleSite/config.toml). To use it, copy the `config.toml` in the root folder of your Hugo site. Feel free to change the strings in this theme.
 
 ### Photo Management
 
-All photos are stored in the [`photo`](https://github.com/chen-zhe/photo-grid/tree/master/exampleSite/content/photo) folder under `content`. You can make multiple directories under it and the theme will enumerate all photos within in order. Within each subfolder, e.g. [`1-trip1`](https://github.com/chen-zhe/photo-grid/tree/master/exampleSite/content/photo/1-trip1), you can put all relevant photos in it and then copy over the `index.md` file.
+All photos are stored in the [`photo`](exampleSite/content/photo) folder under `content`. You can make multiple directories under it and the theme will enumerate all photos within in order. Within each subfolder, e.g. [`1-trip1`](exampleSite/content/photo/1-trip1), you can put all relevant photos in it and then copy over the `index.md` file.
 
 Within `index.md` file, you can specify each photo's name, description and other properties. Take a look at the descriptions to understand what can be customized.
 
@@ -74,12 +74,12 @@ Now enter `localhost:1313` in the address bar of your browser.
 
 ## Contributing
 
-Did you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](//github.com/chen-zhe/photo-grid/issues) to let me know. Or make directly a [pull request](//github.com/chen-zhe/photo-grid/pulls).
+Did you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](https://github.com/chen-zhe/photo-grid/issues) to let me know. Or make directly a [pull request](https://github.com/chen-zhe/photo-grid/pulls).
 
 
 ## License
 
-This work is licensed under the MIT License. For more information read the [License](//github.com/chen-zhe/photo-grid/blob/master/LICENSE.md).
+This work is licensed under the MIT License. For more information read the [License](LICENSE.md).
 
 
 ## Annotations
