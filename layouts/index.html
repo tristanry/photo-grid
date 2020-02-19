@@ -16,6 +16,7 @@
 						data-title="{{ $image.Name }}"
 						data-description="{{ $image.Params.description | markdownify }}"
 						{{ if isset $image.Params "button_text" }}data-buttontext="{{ $image.Params.button_text }}"{{ end }} data-collection="{{ $page.Title }}"
+						{{ if not $.Site.Params.no_exif }}
 						data-exif="{{ if in (slice "jpg" "jpeg" "tiff" "tif") $image.MediaType.SubType }}
 						{{- with $image.Exif -}}
 							{{- with .Tags -}}
@@ -32,7 +33,7 @@
 							{{- end -}}
 								<li>Taken at {{ if isset $image.Params "timestamp" }} {{ $image.Params.timestamp }} {{ else }}{{ .Date.Format "2006-1-2 15:04" }}{{ end }}</li>
 							{{- end }}
-							{{- end }}">
+							{{- end }}"{{ end }}>
 							{{ $.Scratch.Set "thumbnail" ($image.Resize "x250") }}
 							<img class="lazy" data-src="{{ ($.Scratch.Get "thumbnail").RelPermalink }}" style="width:{{ ($.Scratch.Get "thumbnail").Width }}px;" alt="Thumbnail of {{ $image.Name }}"/>
 						</a>

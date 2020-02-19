@@ -57,6 +57,8 @@ After installing the theme successfully it requires a just a few more steps to g
 
 Take a look inside the [`exampleSite`](https://github.com/Chen-Zhe/photo-grid/blob/master/exampleSite) folder of this theme. You'll find a file called [`config.toml`](https://github.com/Chen-Zhe/photo-grid/blob/master/exampleSite/config.toml). To use it, copy the `config.toml` in the root folder of your Hugo site. Feel free to change the strings in this theme.
 
+EXIF info display can be disabled by setting `no_exif = true` in the config
+
 ### Photo Management
 
 All photos are stored in the [`photo`](https://github.com/Chen-Zhe/photo-grid/blob/master/exampleSite/content/photo) folder under the `content` folder. You can put multiple directories under it and the theme will enumerate all photos within in order of the directory listing. Within each subfolder, e.g. [`1-trip1`](https://github.com/Chen-Zhe/photo-grid/blob/master/exampleSite/content/photo/1-trip1), you can put all relevant photos in it and then copy over the `index.md` file.

@@ -9,6 +9,7 @@ theme = "photo-grid"
 
 [params]
     # Meta
+    no_exif = false
     title = "Photo Grid - Grid Gallery"
     subtitle = "A customized theme for showing your photography work with minimal effort and multiple customization options. Click on each image to find out more about this theme"
     author = "Chen Zhe"
