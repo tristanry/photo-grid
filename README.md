@@ -21,7 +21,7 @@ Photo Grid is based on [Hugird](http://themes.gohugo.io/theme/hugrid/), a respon
 
 ## Screenshot
 
-![Hugrid screenshot](images/screenshot.png)
+![Hugrid screenshot](https://github.com/Chen-Zhe/photo-grid/blob/master/images/screenshot.png)
 
 
 ## Contents
@@ -55,13 +55,13 @@ After installing the theme successfully it requires a just a few more steps to g
 
 ### The config file
 
-Take a look inside the [`exampleSite`](exampleSite) folder of this theme. You'll find a file called [`config.toml`](exampleSite/config.toml). To use it, copy the `config.toml` in the root folder of your Hugo site. Feel free to change the strings in this theme.
+Take a look inside the [`exampleSite`](https://github.com/Chen-Zhe/photo-grid/blob/master/exampleSite) folder of this theme. You'll find a file called [`config.toml`](https://github.com/Chen-Zhe/photo-grid/blob/master/exampleSite/config.toml). To use it, copy the `config.toml` in the root folder of your Hugo site. Feel free to change the strings in this theme.
 
 ### Photo Management
 
-All photos are stored in the [`photo`](exampleSite/content/photo) folder under the `content` folder. You can put multiple directories under it and the theme will enumerate all photos within in order of the directory listing. Within each subfolder, e.g. [`1-trip1`](exampleSite/content/photo/1-trip1), you can put all relevant photos in it and then copy over the `index.md` file.
+All photos are stored in the [`photo`](https://github.com/Chen-Zhe/photo-grid/blob/master/exampleSite/content/photo) folder under the `content` folder. You can put multiple directories under it and the theme will enumerate all photos within in order of the directory listing. Within each subfolder, e.g. [`1-trip1`](https://github.com/Chen-Zhe/photo-grid/blob/master/exampleSite/content/photo/1-trip1), you can put all relevant photos in it and then copy over the `index.md` file.
 
-Within [`index.md`](exampleSite/content/photo/1-trip1/index.md) file, you can specify each photo's name, description and other properties. Take a look at the descriptions to understand what can be customized.
+Within [`index.md`](https://github.com/Chen-Zhe/photo-grid/blob/master/exampleSite/content/photo/1-trip1/index.md) file, you can specify each photo's name, description and other properties. Take a look at the descriptions to understand what can be customized.
 
 ### Nearly finished
 
@@ -79,7 +79,7 @@ Did you found a bug or got an idea for a new feature? Feel free to use the [issu
 
 ## License
 
-This work is licensed under the MIT License. For more information read the [License](LICENSE.md).
+This work is licensed under the MIT License. For more information read the [License](https://github.com/Chen-Zhe/photo-grid/blob/master/LICENSE.md).
 
 
 ## Annotations
