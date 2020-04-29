@@ -1,4 +1,5 @@
-			<header class="clearfix">
-				<h1>{{ with .Site.Params.title }}{{ . | markdownify }}{{ end }}</h1>
-				<span>{{ with .Site.Params.subtitle }}{{ . | markdownify }}{{ end }}</span>
-			</header>
+<header class="clearfix">
+	<h1>{{ with .Site.Params.title }}{{ . | markdownify }}{{ end }}</h1>
+	<span>{{ with .Site.Params.subtitle }}{{ . | markdownify }}{{ end }}</span>
+	<i id="dark-mode-toggle"  class="far fa-moon"></i>
+</header>

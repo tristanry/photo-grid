@@ -74,3 +74,9 @@ img.lazy{
 	display: block;
 	height: 250px;
 }
+
+.dark-mode-toggle{
+    position: relative;
+    top: 0px;
+    right: 0px;
+}

@@ -7,22 +7,13 @@
 		<meta name="author" content="{{ with .Site.Params.author }}{{ . }}{{ end }}" />
 		{{ with .Site.Params.favicon }}<link rel="icon" href="{{ . }}">{{ end }}
 		{{ hugo.Generator }}
-		<style>
-		body {
-			background: {{ .Site.Params.bodybgcolor }};
-			color: {{ .Site.Params.bodytextcolor }};
-		}
-		a {
-			color: {{ .Site.Params.bodytextcolor }};
-		}
-		button {
-			color: {{ .Site.Params.bodytextcolor }};
-		}
-		</style>
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:300,400,700" />
 		<link rel="stylesheet" type="text/css" href="{{ "css/default.css" | absURL }}" />
 		<link rel="stylesheet" type="text/css" href="{{ "css/component.css" | absURL }}" />
+		<link rel="stylesheet" type="text/css" href="{{ "css/all.css" | absURL }}" />
+		<link disabled id="dark-mode-theme" rel="stylesheet" type="text/css" href="{{ "css/dark.css" | absURL }}" />
 		{{ range .Site.Params.custom_css }}
 			<link rel="stylesheet" href="{{ . }}">
 		{{ end }}
 		<script src="{{ "js/modernizr.custom.js" | absURL }}"></script>
+		
