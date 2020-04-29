@@ -30,7 +30,7 @@
 								{{- with .ISOSpeedRatings }}<li>ISO {{ . }}</li>{{ end }}
 								{{- with .UserComment }}<li>{{ substr .  5}}</li>{{ end }}
 							{{- end -}}
-								<li>Taken at {{ if isset $image.Params "timestamp" }} {{ $image.Params.timestamp }} {{ else }}{{ .Date.Format "2/01/2006" }}{{ end }} </li>
+								<li>Taken on {{ if isset $image.Params "timestamp" }} {{ $image.Params.timestamp }} {{ else }}{{ .Date.Format "2/01/2006" }}{{ end }} </li>
 							{{- end }}
 							{{- end }}" {{ end }}>
 						{{ $.Scratch.Set "thumbnail" ($image.Resize "x250") }}
