@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
-	<head>
+
+<head>
 	{{ partial "head.html" . }}
 	{{ template "_internal/google_analytics.html" . }}
-	</head>
-	<body>
-		<div class="container">	
-				{{ partial "header.html" . }}
-			<div class="main">
-				<ul id="og-grid" class="og-grid">
-					{{ range $page := sort (where .Site.RegularPages "Type" "photo") ".File.Dir" }}
-					{{ range $index, $image := sort ($page.Resources.ByType "image") "Params.order" }}
-					<li>
-						<a href="{{ if isset $image.Params "button_url" }}{{ $image.Params.button_url }}{{ else }}#{{ end }}" data-largesrc="{{ $image.RelPermalink }}"
-						data-title="{{ $image.Name }}"
-						data-description="{{ $image.Params.description | markdownify }}"
-						{{ if isset $image.Params "button_text" }}data-buttontext="{{ $image.Params.button_text }}"{{ end }} data-collection="{{ $page.Title }}"
-						{{ if not $.Site.Params.no_exif }}
-						data-exif="{{ if in (slice "jpg" "jpeg" "tiff" "tif") $image.MediaType.SubType }}
+</head>
+
+<body>
+	<div class="container">
+		{{ partial "header.html" . }}
+		<div class="main">
+			<ul id="og-grid" class="og-grid">
+				{{ range $page := sort (where .Site.RegularPages "Type" "photo") ".File.Dir" "desc" }}
+				{{ range $index, $image := sort ($page.Resources.ByType "image") }}
+				<li>
+					<a data-largesrc="{{ $image.RelPermalink }}" data-title="{{ $page.Title }}"
+						{{ if not $.Site.Params.no_exif }} data-exif="{{ if in (slice "jpg" "jpeg" "tiff" "tif") $image.MediaType.SubType }}
 						{{- with $image.Exif -}}
 							{{- with .Tags -}}
 								<li>{{- if isset . "Model" }}{{ if not (hasPrefix (lower .Model) (lower .Make)) }}{{ .Make }} {{ end }}{{ .Model }}
@@ -30,20 +28,23 @@
 								{{- with .ExposureTime }}<li>S.S. {{ . }}s</li>{{ end }}
 								{{- with .FNumber }}<li>A. f/{{ . }}</li>{{ end }}
 								{{- with .ISOSpeedRatings }}<li>ISO {{ . }}</li>{{ end }}
+								{{- with .UserComment }}<li>{{ substr .  5}}</li>{{ end }}
 							{{- end -}}
-								<li>Taken at {{ if isset $image.Params "timestamp" }} {{ $image.Params.timestamp }} {{ else }}{{ .Date.Format "2006-1-2 15:04" }}{{ end }}</li>
+								<li>Taken at {{ if isset $image.Params "timestamp" }} {{ $image.Params.timestamp }} {{ else }}{{ .Date.Format "2/01/2006" }}{{ end }} </li>
 							{{- end }}
-							{{- end }}"{{ end }}>
-							{{ $.Scratch.Set "thumbnail" ($image.Resize "x250") }}
-							<img class="lazy" data-src="{{ ($.Scratch.Get "thumbnail").RelPermalink }}" style="width:{{ ($.Scratch.Get "thumbnail").Width }}px;" alt="Thumbnail of {{ $image.Name }}"/>
-						</a>
-					</li>
-					{{ end }}
-					{{ end }}
-				</ul>
-				{{ partial "footer.html" . }}
-			</div>
+							{{- end }}" {{ end }}>
+						{{ $.Scratch.Set "thumbnail" ($image.Resize "x250") }}
+						<img class="lazy" data-src="{{ ($.Scratch.Get "thumbnail").RelPermalink }}"
+							style="width:{{ ($.Scratch.Get "thumbnail").Width }}px;" />
+					</a>
+				</li>
+				{{ end }}
+				{{ end }}
+			</ul>
+			{{ partial "footer.html" . }}
 		</div>
-		{{ partial "scripts.html" . }}
-	</body>
+	</div>
+	{{ partial "scripts.html" . }}
+</body>
+
 </html>
